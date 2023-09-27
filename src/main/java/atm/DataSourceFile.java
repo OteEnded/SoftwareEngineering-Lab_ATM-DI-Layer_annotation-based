@@ -14,14 +14,14 @@ import java.util.Scanner;
 @Primary
 public class DataSourceFile implements DataSource {
 
-    private String filename;
+    @Value("${filename}") private String filename;
 
-    /**
-     * @param filename the name of the customer file
-     */
-    public DataSourceFile(@Value("${filename}") String filename) {
-        this.filename = filename;
-    }
+//    /**
+//     * @param filename the name of the customer file
+//     */
+//    public DataSourceFile(@Value("${filename}") String filename) {
+//        this.filename = filename;
+//    }
 
     /**
      * Reads the customer numbers and pins

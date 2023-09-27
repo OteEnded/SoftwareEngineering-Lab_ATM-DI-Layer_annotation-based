@@ -8,17 +8,19 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ATM {
-	private Bank bank;
+
+	@Autowired private Bank bank;
+
 	private Customer loginCustomer;
 
-	/**
-	 * Constructs an ATM for a bank.
-	 */
-	@Autowired
-	public ATM(Bank bank) {
-		this.bank = bank;
-		this.loginCustomer = null;
-	}
+//	/**
+//	 * Constructs an ATM for a bank.
+//	 */
+//	@Autowired
+//	public ATM(Bank bank) {
+//		this.bank = bank;
+//		this.loginCustomer = null;
+//	}
 
 	/**
 	 * Finds customer in bank.
